@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Diário Digital</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="diario">
+    <h1>MEU DIÁRIO</h1>
+
+    <div class="pagina">
+      <textarea id="conteudoPagina" placeholder="Escreva aqui..."></textarea>
+      <div class="info-pagina">
+        <span id="infoData"></span>
+        <span id="infoPagina"></span>
+      </div>
+    </div>
+
+    <div class="controles">
+      <button id="anterior" title="Página anterior">⏮</button>
+      <button id="proxima" title="Próxima página">⏭</button>
+      <button id="nova" title="Nova página">＋</button>
+      <button id="remover" title="Remover página">🗑️</button>
+      <button id="salvar" title="Salvar">💾</button>
+      <button id="verTudo" title="Ver tudo">📄</button>
+      <button id="tema" title="Alternar tema">🌗</button>
+    </div>
+  </div>
+
+  <div class="modal" id="modal">
+    <div class="conteudo-modal">
+      <h3>Minhas Anotações</h3>
+      <div id="todasNotas"></div>
+      <button class="botao-fechar" id="fechar">Fechar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
